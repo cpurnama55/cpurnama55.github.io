@@ -1,11 +1,27 @@
 body{
-    background-color: gray;
+    background-color: #070831;
 }
 
 h1{
     color:whitesmoke
 }
 
-p{
-    color:wheat
+.mainHead{
+    position: absolute;
+    color: whitesmoke;
+    font-family: Montserrat-Regular;
+}
+
+.head{
+    padding: 100px;
+    position: relative;
+    font-size: xx-large;
+    top: 100px;
+}
+
+.paragraph{
+    width: 500;
+    position: absolute;
+    font-size: medium;
+    color: #fff4d6;
 }
