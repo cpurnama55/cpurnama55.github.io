@@ -1,27 +1,107 @@
 body{
-    background-color: #070831;
+    background-color: #ffffff;
 }
 
 h1{
-    color:whitesmoke
+    color:black
 }
 
-.mainHead{
-    position: absolute;
-    color: whitesmoke;
-    font-family: Montserrat-Regular;
+/* Fonts  */
+@font-face {
+    font-family:'Roboto Light';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
 }
 
-.head{
-    padding: 100px;
-    position: relative;
+@font-face{
+    font-family:'Roboto Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+/* Stuff for the heading of the page */
+.heading_container{
+    color: black;
+    font-family: 'Roboto Light';
     font-size: xx-large;
-    top: 100px;
+    font-weight: normal;
+    /* Fade in animation */
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
 }
 
-.paragraph{
-    width: 500;
-    position: absolute;
-    font-size: medium;
-    color: #fff4d6;
+.heading{
+    float:left;
+    position: relative;
+}
+
+.heading_links{
+    left: 100px;
+    float: right;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* Hyper link styler */
+a{
+    padding: 15px;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* Stuff for the body of the page */
+.main_body_container{
+    border: 3px;
+    padding: 50px;
+    animation: fadeIn 2s;
+    font-family: sans-serif, 'Roboto Light';
+    font-size: xxx-large;
+    font-weight: normal;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+.sub_body_container{
+    /* padding: 400px; */
+    width: 50%;
+    float:left;
+    position: relative;
+    top: 300px;
+}
+
+.VITA_img_container{
+    /* top: 400px; */
+    float: right;
+}
+
+.image{
+    /* right: 10px; */
+    width: 100%;
+    height: auto;
+}
+
+/* Key frames for fade in animation */
+/* Different definitions depending on the web browser */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
