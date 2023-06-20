@@ -34,11 +34,13 @@ h1{
 .heading{
     float:left;
     position: relative;
+    margin-left: 10%;
 }
 
 .heading_links{
     left: 100px;
     float: right;
+    margin-right: 10%;
     color: inherit;
     text-decoration: inherit;
 }
@@ -52,8 +54,8 @@ a{
 
 /* Stuff for the body of the page */
 .main_body_container{
-    border: 3px;
-    padding: 50px;
+    border: 100px;
+    padding: 80px;
     animation: fadeIn 2s;
     font-family: sans-serif, 'Roboto Light';
     font-size: xxx-large;
@@ -65,22 +67,29 @@ a{
 }
 
 .sub_body_container{
-    /* padding: 400px; */
     width: 50%;
     float:left;
     position: relative;
-    top: 300px;
+    top: 200px;
+    right: 20px;
+}
+
+.main_txt_image{
+    width:70%;
+    height: auto;
+    margin-left: 20%;
 }
 
 .VITA_img_container{
-    /* top: 400px; */
     float: right;
+    padding:10px;
+    margin-left: 50%;
 }
 
-.image{
+.VITA_image{
     /* right: 10px; */
     width: 100%;
-    height: auto;
+    height: auto;;
 }
 
 /* Key frames for fade in animation */
