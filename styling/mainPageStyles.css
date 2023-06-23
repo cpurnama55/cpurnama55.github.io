@@ -41,8 +41,6 @@ h1{
     left: 100px;
     float: right;
     margin-right: 4%;
-    color: inherit;
-    text-decoration: inherit;
 }
 
 /* Hyper link styler */
@@ -118,38 +116,39 @@ a{
 
 /* Spacer before timeline  */
 .timeline_spacer{
-    top: 60%;
-    height: 20vh;
     position: relative;
-    border: 2px solid black;
+    top: 10%;    /* Modify this to adjust this div space from the top, smaller makes closer, larger makes further */
+    height: 20%; /* Modify this to adjust timeline space from this div, smaller makes closer, larger makes further */
+    width: 100%;
+    font-family: sans-serif, 'Roboto Light';
+    font-size: xxx-large;
+    font-weight: 500;
+    display:flex;
+    justify-content: center;
+    /* border: 2px solid black; */
 }
 
 /* For the timeline */
 .timeline{
     position:relative;
     margin: 50px auto;
-    top: 30%;
+    /* top: 30%; */
     height: 100%;
     width: 1000px;
     padding: 40px 0;
-    font-family: sans-serif;
-    font-size: large;
+    font-family: sans-serif, 'Roboto Light';
+    font-size: x-large;
     box-sizing: border-box;
     border: 2px black;
-    /* animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
-    -moz-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s; */
 }
 .timeline:before /* time line bar */
 {
     content: '';
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 5vh;
     width: 2px;
-    height: 60vh;
+    height: 680px; /* Keep height as px. Anything else and timeline bar will resize according to window. Increase as timeline increases*/
     box-sizing: border-box;
     background: #c5c5c5;
 }
@@ -189,9 +188,9 @@ a{
     right: -6px;
     width: 10px;
     height: 10px;
-    background: rgba(233, 33, 99, 1);
+    background: rgba(0, 0, 0, 1);
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .timeline ul li:nth-child(even):before{ /*Dots to show points on timeline*/
@@ -201,16 +200,17 @@ a{
     left: -4px;
     width: 10px;
     height: 10px;
-    background: rgba(233, 33, 99, 1);
+    background: rgba(0, 0, 0, 1);
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .timeline ul li h3{
     margin: 0;
     padding: 0;
+    font-family: sans-serif, 'Roboto Light';
     font-weight: 600;
-    color: rgba(233, 33, 99, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 .timeline ul li p{
@@ -221,31 +221,32 @@ a{
 .timeline ul li .time h4{
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-weight: bolder;
+    font-size: large;
 }
 
 .timeline ul li:nth-child(odd) .time{ /* date labels */
     position: absolute;
     top: 12px;
-    right: -250px;
+    right: -320px;
     margin: 0;
     padding: 8px 16px;
-    background: rgba(233, 33, 99, 1);
+    background: rgba(0, 0, 0, 1);
     color: #fff;
     border-radius: 18px;
-    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3)
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3)
 }
 
 .timeline ul li:nth-child(even) .time{ /* date labels */
     position: absolute;
     top: 12px;
-    left: -250px;
+    left: -320px;
     margin: 0;
     padding: 8px 16px;
-    background: rgba(233, 33, 99, 1);
+    background: rgba(0, 0, 0, 1);
     color: #fff;
     border-radius: 18px;
-    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3)
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3)
 }
 
 /* For fading in the timeline */
@@ -259,7 +260,7 @@ a{
 }
 
 .active.fade-bottom {
-    animation: fade-bottom 2s ease-in;
+    animation: fade-bottom 1.5s ease-in;
 }
 
 @keyframes fade-bottom {
