@@ -6,6 +6,13 @@ h1{
     color:black
 }
 
+/* Fading out the entire page on a link click */
+body.fade-effect {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
 /* Fonts  */
 @font-face {
     font-family:'Roboto Light';
@@ -23,6 +30,7 @@ h1{
     font-family: 'Roboto Light';
     font-size: xx-large;
     font-weight: normal;
+    position: relative;
     /* Fade in animation */
     -webkit-animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
@@ -33,7 +41,6 @@ h1{
 
 .heading{
     float:left;
-    position: relative;
     margin-left: 4%;
 }
 
