@@ -2,7 +2,7 @@
 .main_body_container{
     border: 100px;
     padding: 80px;
-    font-family: sans-serif, 'Roboto Light';
+    font-family: 'Roboto Light', sans-serif;
     font-size: xxx-large;
     font-weight: normal;
     animation: fadeIn 2s;
@@ -39,28 +39,6 @@
     height: auto;;
 }
 
-/* Key frames for fade in animation */
-/* Different definitions depending on the web browser */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@-moz-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@-ms-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
 
 /* Spacer before timeline  */
 .timeline_spacer{
@@ -68,7 +46,7 @@
     top: 10%;    /* Modify this to adjust this div space from the top, smaller makes closer, larger makes further */
     height: 20%; /* Modify this to adjust timeline space from this div, smaller makes closer, larger makes further */
     width: 100%;
-    font-family: sans-serif, 'Roboto Light';
+    font-family: 'Roboto Light', sans-serif;
     font-size: xxx-large;
     font-weight: 500;
     display:flex;
@@ -84,7 +62,7 @@
     height: 100%;
     width: 1000px;
     padding: 40px 0;
-    font-family: sans-serif, 'Roboto Light';
+    font-family: 'Roboto Light', sans-serif;
     font-size: x-large;
     box-sizing: border-box;
     border: 2px black;
@@ -156,7 +134,7 @@
 .timeline ul li h3{
     margin: 0;
     padding: 0;
-    font-family: sans-serif, 'Roboto Light';
+    font-family: 'Roboto Light', sans-serif;
     font-weight: 600;
     color: rgba(0, 0, 0, 1);
 }
@@ -209,15 +187,4 @@
 
 .active.fade-bottom {
     animation: fade-bottom 1.5s ease-in;
-}
-
-@keyframes fade-bottom {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
