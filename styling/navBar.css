@@ -1,0 +1,80 @@
+/* Fonts  */
+@font-face {
+    font-family:'Roboto Light';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'Roboto Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+nav {
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Roboto Light';
+    font-size: xx-large;
+    font-weight: normal;
+    /* Positioning */
+    display:flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center align items */
+    height:60px; /* Set a fixed height for the navigation bar */
+    /* position: relative; */
+
+    /* Fade in animation */
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+.right-aligned ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.right-aligned li {
+    margin-left: 10px;
+}
+
+.right-aligned a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.left-aligned {
+    margin-right: auto; /* Pushes the left-aligned element to the left */
+    padding-left: 3%;
+}
+
+.right-aligned {
+    margin-left: auto; /* Pushes the right-aligned element to the right */
+    padding-right: 3%
+}
+
+/* Key frames for fade in animation */
+/* Different definitions depending on the web browser */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
