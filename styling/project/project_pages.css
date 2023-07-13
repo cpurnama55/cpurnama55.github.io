@@ -2,10 +2,6 @@
     font-family: 'Roboto Light';
     display: flex;
     flex-direction: column;
-    /* max-width: 100%; */
-    /* grid-template-columns: 1fr 1fr; /* Equal width for both columns */
-    /* grid-gap: 20px;   */
-    /* flex-wrap: wrap; */
     animation: fadeIn 2s;
     -webkit-animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
@@ -14,7 +10,6 @@
 }
 
 .text-column {
-    /* flex: 1 0 50%; Adjust the percentage as desired */
     flex-basis: calc(50%-10px);
     margin-right: 20px; /* Adjust the spacing between columns */
     max-width: 100%;
@@ -24,7 +19,6 @@
     justify-content:center;
     align-items: center;
     position:relative;
-    /* flex-basis: calc(50%-10px); */
     max-width: 100%;
 }
 
