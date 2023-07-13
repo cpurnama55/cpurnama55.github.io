@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPGA-based Ray Tracer | Caelan Purnama</title>
+    <link rel = "stylesheet" href="../../styling/navBar.css">
+    <link rel = "stylesheet" href="../../styling/hyperlinkStyles.css">
+    <link rel = "stylesheet" href="../../styling/bodyStyles.css">
+    <link rel = "stylesheet" href="../../styling/project/project_pages.css">
+    <script type="text/javascript" src="../../js/animations.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="left-aligned">Caelan Purnama</div>
+        <div class="right-aligned">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../aboutPage.html">About</a></li>
+                <li><a href="../projectsPage.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="project-container">
+        <div class="text-column">
+            <h2>Ray Tracer</h2>
+            <p>The FPGA-based ray tracer was created as part of one of my embedded systems capstone classes and was a project focused on implementing ray tracing on an FPGA with hardware acceleration to see if this would be a feasible and cheaper alternative to high-end dedicated graphics cards. The FPGA board we used was the Terasic DE10-Nano.</p>
+            <p>To implement the ray tracer, we did the following:</p>
+            <ul>
+                <li>Created ray tracing C code to act as a baseline and validation method</li>
+                <li>Outlined the FPGA implementation by creating four major hardware modules that would implement the ray tracing architecture</li>
+                <li>Created SystemVerilog code and validated using data from the initial C code and using Universal Verification Methodology in ModelSim</li>
+                <li>Verified the ability to synthesize using Synplify Premier</li>
+                <li>Integrate the actual hardware modules onto the FPGA using Intel’s Quartus software</li>
+            </ul>
+
+        </div>
+        <div class="image-column">
+            <div class="image-wrapper">
+                <img src="../../images/project/RayTracer/High level ray tracer diagram.png" alt="High level architecture">
+                <p class="caption">High level block diagram of ray tracer architecture</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/RayTracer/RayTracer.png" alt="Raw ray tracer output">
+                <p class="caption">Raw bitmap output of the ray tracer</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/RayTracer/render.png" alt="Results">
+                <p class="caption">Result of render from produced bitmap</p>
+            </div>
+        </div>
+    </div>
+</body>

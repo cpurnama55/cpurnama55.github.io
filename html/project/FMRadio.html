@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPGA-based FM Radio | Caelan Purnama</title>
+    <link rel = "stylesheet" href="../../styling/navBar.css">
+    <link rel = "stylesheet" href="../../styling/hyperlinkStyles.css">
+    <link rel = "stylesheet" href="../../styling/bodyStyles.css">
+    <link rel = "stylesheet" href="../../styling/project/project_pages.css">
+    <script type="text/javascript" src="../../js/animations.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="left-aligned">Caelan Purnama</div>
+        <div class="right-aligned">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../aboutPage.html">About</a></li>
+                <li><a href="../projectsPage.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="project-container">
+        <div class="text-column">
+            <h2>FM-Radio</h2>
+            <p>The FPGA-Based FM Radio was created as a final project for my Digital Systems Designs w/ FPGAs class and as the name suggests was an implementation of an FM Radio’s system architecture onboard an FPGA. The input to the system were sinusoidal I and Q signals, and the output was audio data pertaining to the left and right channels.</p>
+            <p>The general process for this project is as follows:</p>
+            <ul>
+                <li>Parse the provided data from our professor using C. The initial data file provided was too large so we had to implement a parsing algorithm that would split the data into chunks to allow for fast processing.</li>
+                <li>Create FPGA modules based on the provided FM Radio architecture.</li>
+                <li>Created SystemVerilog code and validated using data from the initial C code and using Universal Verification Methodology in ModelSim.</li>
+                <li>Verified the ability to synthesize using Synplify Premier</li>
+            </ul>
+
+        </div>
+        <div class="image-column">
+            <div class="image-wrapper">
+                <img src="../../images/project/FPGA-FM-RADIO/radio_architecture.png" alt="FM Radio architecture">
+                <p class="caption">FM radio architecture</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/FPGA-FM-RADIO/IIR Block diagram.png" alt="IIR block diagram">
+                <p class="caption">Block diagram of IIR filter implemented in SystemVerilog</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/FPGA-FM-RADIO/synthesis_results.png" alt="Results">
+                <p class="caption">Synplify Premier synthesis results of the FM radio</p>
+            </div>
+        </div>
+    </div>
+</body>
