@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lock | Caelan Purnama</title>
+    <link rel = "stylesheet" href="../../styling/navBar.css">
+    <link rel = "stylesheet" href="../../styling/hyperlinkStyles.css">
+    <link rel = "stylesheet" href="../../styling/bodyStyles.css">
+    <link rel = "stylesheet" href="../../styling/project/project_pages.css">
+    <script type="text/javascript" src="../../js/animations.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="left-aligned">Caelan Purnama</div>
+        <div class="right-aligned">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../aboutPage.html">About</a></li>
+                <li><a href="../projectsPage.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="project-container">
+        <div class="text-column">
+            <h2>Smart Lock</h2>
+            <p>The Smart Lock was created as part of my Internet of Things class’s final project. The requirements for the final project were to create a device that would interface with the cloud, whether it be through telemetry or remote actuation.</p>
+            <p>The Smart lock was created by wiring an ESP32 microcontroller to a DC motor. The ESP32 was then programmed using embedded C++ and connected to Microsoft Azure services. The connection was created via MQTT protocol. With this cloud connection, the device was able to provide telemetry (status of the lock) and was also able to receive commands from the cloud (lock/unlock). The enclosure for the device was created in OnShape and printed using PLA.</p>
+        </div>
+        <div class="image-column">
+            <div class="image-wrapper">
+                <img src="../../images/project/smart_lock/smart_lock.jpeg" alt="Smart Lock">
+                <p class="caption">The Smart Lock</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/smart_lock/Architecture.png" alt="System architecture">
+                <p class="caption">Overall system architecture</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/smart_lock/messaging_interface.png" alt="Messaging interface">
+                <p class="caption">Messaging interface between client and cloud. Left side is the ESP32 client messaging. Right side is the Azure IOT explorer interface that allows a message with commands to be sent to the microcontroller</p>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITA MK1 Caelan Purnama</title>
+    <link rel = "stylesheet" href="../../styling/navBar.css">
+    <link rel = "stylesheet" href="../../styling/hyperlinkStyles.css">
+    <link rel = "stylesheet" href="../../styling/bodyStyles.css">
+    <link rel = "stylesheet" href="../../styling/project/project_pages.css">
+    <script type="text/javascript" src="../../js/animations.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="left-aligned">Caelan Purnama</div>
+        <div class="right-aligned">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../aboutPage.html">About</a></li>
+                <li><a href="../projectsPage.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="project-container">
+        <div class="text-column">
+            <h2>VITA MK1</h2>
+            <p>The Versatile Integration and Testing Apparatus (VITA) MK1 is a custom ESP32-S3 based devkit I made entirely from scratch I did as a general computer engineer capstone project. I aimed for this project to be a spiritual successor to my compact webcam project as I wanted to go through another embedded system development cycle from the ground up, but this time with minimal support and pre-existing resources so I could struggle and dive deeper into different parts of embedded system development.</p>
+            <p>Below is the general development process I went through:</p>
+            <ul>
+                <li>Selecting a microcontroller, I wanted to create a devkit and driver files for</li>
+                <li>Proper hardware spec’ing for my chosen microcontroller</li>
+                <li>Choosing peripherals and figuring out how to interface them with my chosen microcontroller (ESP32-S3)</li>
+                <li>Creating a breakout PCB using Autodesk Eagle to allow for microcontroller prototyping.</li>
+                <li>Connecting each chosen peripheral to the microcontroller under isolated scenarios and writing driver files from scratch (IE not using any pre-existing Arduino libraries or GitHub repos) using ESP-IDF and embedded C. Some protocols and firmware features I implemented and worked with are as follows:
+                    <ul>
+                        <li>UART</li>
+                        <li>SPI</li>
+                        <li>SPI for Neopixel control</li>
+                        <li>I2C</li>
+                        <li>JTAG</li>
+                        <li>USB 2.0</li>
+                        <li>DMA</li>
+                        <li>Variadic functions</li>
+                    </ul>
+                </li>
+                <li>Creating and assembling a final PCB by hand and creating a demo that showcases all the peripherals in working together using my custom driver files</li>
+            </ul>
+        </div>
+        <div class="image-column">
+            <div class="image-wrapper">
+                <img src="../../images/project/VITA/breakout_pcb.png" alt="Breakout PCB">
+                <p class="caption">Breakout PCB to facilitate prototyping</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/VITA/MK1 PCB.png" alt="MK1 PCB">
+                <p class="caption">MK1 PCB with all peripherals connected</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/VITA/VITA-MK1-CAD.png" alt="MK1 CAD">
+                <p class="caption">CAD of VITA MK1</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/VITA/VITA-MK1.jpeg" alt="MK1 with demo code running">
+                <p class="caption">MK1 powered on with demo code running</p>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Webcam| Caelan Purnama</title>
+    <link rel = "stylesheet" href="../../styling/navBar.css">
+    <link rel = "stylesheet" href="../../styling/hyperlinkStyles.css">
+    <link rel = "stylesheet" href="../../styling/bodyStyles.css">
+    <link rel = "stylesheet" href="../../styling/project/project_pages.css">
+    <script type="text/javascript" src="../../js/animations.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="left-aligned">Caelan Purnama</div>
+        <div class="right-aligned">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../aboutPage.html">About</a></li>
+                <li><a href="../projectsPage.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="project-container">
+        <div class="text-column">
+            <h2>Compact Webcam</h2>
+            <p>The compact webcam was created for my Electronic System Design I course and is a webcam created from scratch that has wireless live streaming capability.</p>
+            <p>As part of the course, we had to design the webcam entirely from the ground up, so we prototyped using a breakout board, created a PCB using Autodesk Eagle to interface all components together, used embedded C to program an Atmel SAM microcontroller, and created a webpage using HTML, CSS, and JavaScript. An enclosure for the webcam was also created using Onshape and printed using PLA. Buttons and debug pins are still accessible from the enclosure to allow provisioning of the Wi-Fi chip and to allow hardware debugging by reading voltage levels or probing serial lines.</p>
+            <p>To implement wireless capability, the SAM microcontroller was connected to an ESP32 which acted as a Wi-Fi chip that hosted the web server in which a livestream from the camera could be seen.</p>
+        </div>
+        <div class="image-column">
+            <div class="image-wrapper">
+                <img src="../../images/project/Webcam/Wireless architecture.png" alt="Wireless architecture">
+                <p class="caption">System wireless architecture</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/Webcam/PCB.png" alt="PCB">
+                <p class="caption">Webcam pcb</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/Webcam/CAD.png" alt="Webcam enclosure CAD">
+                <p class="caption">Webcam enclosure CAD</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../images/project/Webcam/IMG_4112.jpeg" alt="Webcam">
+                <p class="caption">Webcam</p>
+            </div>
+        </div>
+    </div>
+</body>
