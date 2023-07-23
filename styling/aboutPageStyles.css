@@ -22,7 +22,7 @@
 }
 
 .image img {
-    transform: scale(0.8);
+    transform: scale(0.5);
     max-width: 100%; /* Ensure the image does not exceed its container */
     /* height: auto; */
 }
